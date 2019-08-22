@@ -1,0 +1,16 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="LB_CONFIG_PROCESSES" ItemsSource="{Binding Path=ConfigProcesses}" SelectedItem="{Binding SelectedItem}" HorizontalAlignment="Left" Height="310" Margin="460,55,0,0" VerticalAlignment="Top" Width="220"/>
+        <ListBox x:Name="LB_OPEN_PROCESSES" ItemsSource="{Binding OpenProcesses}" DisplayMemberPath="Title" SelectedItem="{Binding SelectedItem}" HorizontalAlignment="Left" Height="310" Margin="60,55,0,0" VerticalAlignment="Top" Width="230"/>
+        <Button x:Name="BTN_ENABLE" Content="Add" HorizontalAlignment="Left" Margin="330,105,0,0" VerticalAlignment="Top" Width="95" Click="BTN_ENABLE_Click" RenderTransformOrigin="-1,1"/>
+        <Button x:Name="BTN_REMOVE_PROCESS" Content="Remove" HorizontalAlignment="Left" Margin="330,140,0,0" VerticalAlignment="Top" Width="95" Click="BTN_REMOVE_PROCESS_Click"/>
+
+    </Grid>
+</Window>

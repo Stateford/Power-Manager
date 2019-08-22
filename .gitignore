@@ -1,0 +1,7 @@
+# target files
+Debug/
+x64/
+
+# editor files
+.vs/
+*.vcxproj.*
