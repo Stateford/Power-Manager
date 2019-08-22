@@ -1,6 +1,8 @@
 # target files
 Debug/
 x64/
+bin/
+obj/
 
 # editor files
 .vs/
